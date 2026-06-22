@@ -37,7 +37,7 @@ export default function MultiLanguage() {
             </div>
           </div>
 
-          <Button variant="primary" style={{ background: "#ef4444", color: "white", padding: "16px 36px", fontSize: "1rem", borderRadius: "8px", border: "1px solid #b91c1c", width: "fit-content", marginTop: "16px" }}>
+          <Button variant="primary" style={{ background: "#ef4444", color: "white", padding: "16px 36px", fontSize: "1rem", borderRadius: "8px", border: "1px solid #b91c1c", width: "fit-content", marginTop: "16px" }} onClick={() => window.open("https://wa.me/918332063638", "_blank")}>
             Get Started Now
           </Button>
         </div>

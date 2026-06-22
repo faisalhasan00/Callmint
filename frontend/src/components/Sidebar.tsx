@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useAppStore } from "@/lib/store";
 import {
@@ -93,16 +94,12 @@ export default function Sidebar({ mobileOpen, setMobileOpen }: { mobileOpen: boo
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <div
                 style={{
-                  width: 36,
-                  height: 36,
-                  borderRadius: 8,
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  background: "var(--color-accent-primary)",
                 }}
               >
-                <Mic size={20} color="#fff" />
+                <Image src="/Logos/callmint-icon-navy.png" alt="Callmint Logo" width={32} height={32} style={{ objectFit: "contain" }} />
               </div>
               <span
                 style={{

@@ -20,7 +20,7 @@ export default function PricingPage() {
           <div style={{ fontSize: "3rem", fontWeight: 800, color: "#2e1065", marginBottom: "8px" }}>₹2,999<span style={{ fontSize: "1.2rem", color: "#64748b", fontWeight: 500 }}>/mo</span></div>
           <p style={{ color: "#475569", marginBottom: "32px", fontWeight: 500 }}>Includes 1,000 AI Minutes</p>
           
-          <Button variant="secondary" style={{ marginBottom: "32px", width: "100%", borderColor: "#4c1d95", color: "#4c1d95" }}>Get Started</Button>
+          <Button variant="secondary" style={{ marginBottom: "32px", width: "100%", borderColor: "#4c1d95", color: "#4c1d95" }} onClick={() => window.open("https://wa.me/918332063638", "_blank")}>Get Started</Button>
           
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             {["1 AI Agent", "English & Hindi Support", "Basic Call Analytics", "Email Support", "Standard Voices"].map((feature, i) => (
@@ -39,7 +39,7 @@ export default function PricingPage() {
           <div style={{ fontSize: "3rem", fontWeight: 800, color: "#2e1065", marginBottom: "8px" }}>₹7,999<span style={{ fontSize: "1.2rem", color: "#64748b", fontWeight: 500 }}>/mo</span></div>
           <p style={{ color: "#475569", marginBottom: "32px", fontWeight: 500 }}>Includes 5,000 AI Minutes</p>
           
-          <Button variant="primary" style={{ marginBottom: "32px", width: "100%", background: "#8b5cf6" }}>Get Started</Button>
+          <Button variant="primary" style={{ marginBottom: "32px", width: "100%", background: "#8b5cf6" }} onClick={() => window.open("https://wa.me/918332063638", "_blank")}>Get Started</Button>
           
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             {["Up to 5 AI Agents", "All Regional Languages", "Outbound Campaigns", "CRM Integrations", "Priority Support", "Premium Voice Cloning"].map((feature, i) => (

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { authApi, setToken } from "@/lib/api";
 import { Mic } from "lucide-react";
+import Image from "next/image";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -93,17 +94,13 @@ export default function LoginPage() {
         <div style={{ textAlign: "center", marginBottom: 32 }}>
           <div
             style={{
-              width: 56,
-              height: 56,
-              borderRadius: 16,
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              background: "linear-gradient(135deg, #6366f1, #a855f7)",
               marginBottom: 16,
             }}
           >
-            <Mic size={28} color="#fff" />
+            <Image src="/Logos/callmint-icon-navy.png" alt="Callmint Logo" width={64} height={64} style={{ objectFit: "contain" }} />
           </div>
           <h1
             style={{ fontSize: "1.5rem", fontWeight: 800, letterSpacing: "-0.02em" }}

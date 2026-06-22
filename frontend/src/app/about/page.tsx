@@ -42,7 +42,7 @@ export default function AboutPage() {
 
         <section style={{ textAlign: "center", padding: "60px 0" }}>
           <h2 style={{ fontSize: "2rem", fontWeight: 700, color: "#2e1065", marginBottom: "24px" }}>Ready to transform your business?</h2>
-          <Button variant="primary" style={{ padding: "16px 32px", fontSize: "1.1rem" }}>Contact Sales Team</Button>
+          <Button variant="primary" style={{ padding: "16px 32px", fontSize: "1.1rem" }} onClick={() => window.open("https://wa.me/918332063638", "_blank")}>Contact Sales Team</Button>
         </section>
 
       </div>

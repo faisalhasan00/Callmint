@@ -51,11 +51,12 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}
         >
-          <Button variant="primary" style={{ background: "#ef4444", color: "white", padding: "16px 36px", fontSize: "1rem", borderRadius: "12px", border: "1px solid #b91c1c", boxShadow: "0 4px 14px rgba(239, 68, 68, 0.3)" }}>
+          <Button 
+            variant="primary" 
+            style={{ background: "#ef4444", color: "white", padding: "16px 36px", fontSize: "1rem", borderRadius: "12px", border: "1px solid #b91c1c", boxShadow: "0 4px 14px rgba(239, 68, 68, 0.3)" }}
+            onClick={() => window.open("https://wa.me/918332063638", "_blank")}
+          >
             Schedule Demo
-          </Button>
-          <Button variant="primary" style={{ background: "#6b21a8", color: "white", padding: "16px 36px", fontSize: "1rem", borderRadius: "12px", border: "1px solid #4c1d95", boxShadow: "0 4px 14px rgba(107, 33, 168, 0.3)", display: "flex", alignItems: "center", gap: "8px" }}>
-            Get 100 Calls Free <div style={{ background: "white", borderRadius: "4px", padding: "2px 4px", display: "flex" }}><ArrowRight size={14} color="#6b21a8" /></div>
           </Button>
         </motion.div>
       </div>

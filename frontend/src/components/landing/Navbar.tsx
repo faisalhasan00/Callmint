@@ -229,13 +229,13 @@ export default function Navbar() {
 
       {/* Right Actions */}
       <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-        <div className="hidden md:flex" style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", fontWeight: 500, color: "var(--color-text-secondary)", marginRight: "8px", fontSize: "0.95rem" }} onClick={() => router.push("/login")}>
+        <div className="hidden md:flex" style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer", fontWeight: 500, color: "var(--color-text-secondary)", marginRight: "8px", fontSize: "0.95rem" }} onClick={() => window.open("https://wa.me/918332063638", "_blank")}>
           <User size={18} color="var(--color-primary)" /> Contact Sales
         </div>
         <Button variant="secondary" style={{ color: "var(--color-primary)", borderColor: "var(--color-primary)", background: "transparent" }}>
           <PhoneCall size={16} /> Talk to Voice AI
         </Button>
-        <Button variant="primary" onClick={() => router.push("/dashboard")}>
+        <Button variant="primary" onClick={() => window.open("https://wa.me/918332063638", "_blank")}>
           Book a Demo
         </Button>
       </div>

@@ -118,7 +118,7 @@ export default function GenericPageLayout({
               <h2 style={{ fontSize: "2rem", fontWeight: 700, marginBottom: "24px" }}>
                 {callToAction}
               </h2>
-              <Button size="lg" style={{ background: "white", color: "#4c1d95", fontSize: "1.1rem", padding: "0 32px" }}>
+              <Button size="lg" style={{ background: "white", color: "#4c1d95", fontSize: "1.1rem", padding: "0 32px" }} onClick={() => window.open("https://wa.me/918332063638", "_blank")}>
                 Get Started Now <ArrowRight size={20} style={{ marginLeft: "8px" }} />
               </Button>
             </div>
