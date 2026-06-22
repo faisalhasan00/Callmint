@@ -1,0 +1,24 @@
+import React, { use } from "react";
+import RichArticleTemplate from "@/components/landing/RichArticleTemplate";
+import { industriesContent } from "@/lib/contentData";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const unwrappedParams = await params;
+  const content = industriesContent[unwrappedParams.slug];
+  if (!content) return {};
+
+  return {
+    title: content.seoTitle || content.title,
+    description: content.seoDescription || content.subtitle,
+  };
+}
+
+export default function IndustriesPage({ params }: { params: Promise<{ slug: string }> }) {
+  const unwrappedParams = use(params);
+  const content = industriesContent[unwrappedParams.slug];
+  if (!content) return notFound();
+
+  return <RichArticleTemplate content={content} />;
+}
